@@ -1,0 +1,19 @@
+{
+  "name": "ads-ts",
+  "version": "0.0.1",
+  "description": "Algorithms and Data Structures in Typescript",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjsheets/ads-ts.git"
+  },
+  "author": "Chad Sheets",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cjsheets/ads-ts/issues"
+  },
+  "homepage": "https://github.com/cjsheets/ads-ts#readme"
+}
