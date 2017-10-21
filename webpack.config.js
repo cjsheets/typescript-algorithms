@@ -1,15 +1,17 @@
+const glob = require("glob");
 const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    "ads-ts": "./src/index.ts",
-    "ads-ts-min": "./src/index.ts",
+    "ads-ts": glob.sync("./src/*.ts"),
+    "ads-ts.min": glob.sync("./src/*.ts")
   },
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: '[name]-[chunkhash].js',
-    sourceMapFilename: '[name]-[chunkhash].map'
+    filename: '[name].js',
+    libraryTarget: 'var',
+    library: 'ads'
   },
   module: {
     loaders: [{
@@ -28,7 +30,7 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
-      include: /^ads-ts-min.*\.js$/,
+      include: /^ads-ts.min\.js$/,
       minimize: true
     })
   ]

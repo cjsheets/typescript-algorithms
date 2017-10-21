@@ -1,5 +1,6 @@
 .vscode/
 coverage/
+demo/
 node_modules/
 src/
 
