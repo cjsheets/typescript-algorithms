@@ -1,0 +1,9 @@
+# Compile Directories
+node_modules
+/coverage
+/dist
+
+# Editor configuration
+.vscode
+.settings
+.idea

@@ -2,10 +2,13 @@
   "name": "ads-ts",
   "version": "0.0.1",
   "description": "Algorithms and Data Structures in Typescript",
-  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run clean && npm run build:prod",
+    "clean": "rimraf ./dist",
+    "build:prod": "./node_modules/.bin/webpack",
+    "test": "echo \"ToDo: Write tests\" && exit 1"
   },
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cjsheets/ads-ts.git"
@@ -15,5 +18,13 @@
   "bugs": {
     "url": "https://github.com/cjsheets/ads-ts/issues"
   },
-  "homepage": "https://github.com/cjsheets/ads-ts#readme"
+  "homepage": "https://github.com/cjsheets/ads-ts#readme",
+  "devDependencies": {
+    "rimraf": "2.6.2",
+    "ts-loader": "2.0.3",
+    "tslint": "4.5.1",
+    "tslint-loader": "3.4.3",
+    "typescript": "2.5.3",
+    "webpack": "2.3.1"
+  }
 }

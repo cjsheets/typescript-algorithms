@@ -9,7 +9,10 @@
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "pretty": true,
-    "removeComments": false,
+    "removeComments": false
   },
-  "moduleResolution": "node"
+  "moduleResolution": "node",
+  "include": [
+    "src"
+  ]
 }
