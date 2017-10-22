@@ -1,6 +1,6 @@
 {
   "name": "typescript-algorithms",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Algorithms and Data Structures in Typescript",
   "scripts": {
     "build": "npm run clean && npm run build:prod",
