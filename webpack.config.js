@@ -4,14 +4,14 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    "typescript-algorithms": glob.sync("./src/*.ts"),
-    "typescript-algorithms.min": glob.sync("./src/*.ts")
+    "typescript-algorithms": glob.sync("./src/**/*.ts"),
+    "typescript-algorithms.min": glob.sync("./src/**/*.ts")
   },
   output: {
     path: path.join(__dirname, 'dist'),
     filename: '[name].js',
     libraryTarget: 'var',
-    library: 'ads'
+    library: 'tsAlgorithms'
   },
   module: {
     loaders: [{

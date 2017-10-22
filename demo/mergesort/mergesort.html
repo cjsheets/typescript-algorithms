@@ -3,7 +3,7 @@
     <script src="../../dist/typescript-algorithms.min.js"></script>
   </head>
   <body>
-    <b>Initial List</b><br>
+    <b>Initial Array</b><br>
     <pre id="json-1"></pre>
 
     <b>Trimmed List</b><br>
@@ -15,15 +15,13 @@
     <b>Reversed List</b><br>
     <pre id="json-4"></pre>
     <script>
-      const linkedList = new tsAlgorithms.LinkedList();
+      const mergeSort = new tsAlgorithms.MergeSort();
 
       // Add elements to the linked list
-      linkedList.append('A');
-      linkedList.append('B');
-      linkedList.append('C');
+      const array = [80, 20, 50, 30, 10, 20, 90, 40, 60, 70]
 
       document.getElementById("json-1").innerHTML =
-      JSON.stringify(linkedList, undefined, 2);
+      JSON.stringify(array, undefined, 2);
 
       // Remove an element from the list
       linkedList.removeAt(1);

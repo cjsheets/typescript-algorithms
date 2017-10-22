@@ -5,10 +5,10 @@ interface IGraph<T> {
   numberOfEdges: number;
 }
 
-interface IEdge {
+// interface IEdge {
 
-}
+// }
 
-export class Graph<T> {
- 
-}
+// export class Graph<T> {
+
+// }
