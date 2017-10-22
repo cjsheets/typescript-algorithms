@@ -1,4 +1,4 @@
-# ADS-TS Demos
+# typescript-algorithms Demos
 
 Try out the latest release on JSFiddle
 

@@ -1,5 +1,5 @@
 {
-  "name": "ads-ts",
+  "name": "typescript-algorithms",
   "version": "0.0.7",
   "description": "Algorithms and Data Structures in Typescript",
   "scripts": {
@@ -8,17 +8,17 @@
     "build:prod": "./node_modules/.bin/webpack",
     "test": "echo \"ToDo: Write tests\" && exit 1"
   },
-  "main": "dist/ads-ts.min.js",
+  "main": "dist/typescript-algorithms.min.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cjsheets/ads-ts.git"
+    "url": "git+https://github.com/cjsheets/typescript-algorithms.git"
   },
   "author": "Chad Sheets",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cjsheets/ads-ts/issues"
+    "url": "https://github.com/cjsheets/typescript-algorithms/issues"
   },
-  "homepage": "https://github.com/cjsheets/ads-ts#readme",
+  "homepage": "https://github.com/cjsheets/typescript-algorithms#readme",
   "devDependencies": {
     "rimraf": "2.6.2",
     "ts-loader": "2.0.3",

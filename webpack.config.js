@@ -4,8 +4,8 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    "ads-ts": glob.sync("./src/*.ts"),
-    "ads-ts.min": glob.sync("./src/*.ts")
+    "typescript-algorithms": glob.sync("./src/*.ts"),
+    "typescript-algorithms.min": glob.sync("./src/*.ts")
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -30,7 +30,7 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
-      include: /^ads-ts.min\.js$/,
+      include: /^typescript-algorithms.min\.js$/,
       minimize: true
     })
   ]
