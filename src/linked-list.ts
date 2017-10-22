@@ -1,6 +1,6 @@
 interface INode<T> {
   item: T;
-  next: INode<T>;
+  next?: INode<T>;
 }
 
 export class LinkedList<T> {
@@ -81,6 +81,22 @@ export class LinkedList<T> {
     this.listLength--;
 
     return pointer.item;
+  }
+
+  public reverse() {
+    if (this.head && this.head.next) {
+      let previousNode = null;
+      let currentNode = this.head;
+      let nextNode = this.head.next;
+      this.head.next = null;
+      while (nextNode) {
+        previousNode = currentNode;
+        currentNode = nextNode;
+        nextNode = currentNode.next;
+        currentNode.next = previousNode;
+      }
+      this.head = currentNode;
+    }
   }
 
   private newNode = <T>(item: T) =>

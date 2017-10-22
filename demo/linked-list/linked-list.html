@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <script src="../../dist/ads-ts.min.js"></script>
+  </head>
+  <body>
+    <b>Initial List</b><br>
+    <pre id="json-1"></pre>
+
+    <b>Trimmed List</b><br>
+    <pre id="json-2"></pre>
+
+    <b>Inserted List</b><br>
+    <pre id="json-3"></pre>
+
+    <b>Reversed List</b><br>
+    <pre id="json-4"></pre>
+    <script>
+      const linkedList = new ads.LinkedList();
+
+      // Add elements to the linked list
+      linkedList.append('A');
+      linkedList.append('B');
+      linkedList.append('C');
+
+      document.getElementById("json-1").innerHTML =
+      JSON.stringify(linkedList, undefined, 2);
+
+      // Remove an element from the list
+      linkedList.removeAt(1);
+
+      document.getElementById("json-2").innerHTML =
+      JSON.stringify(linkedList, undefined, 2);
+
+      // Insert an element in the middle of the list
+      linkedList.insert('D', 1);
+
+      document.getElementById("json-3").innerHTML =
+      JSON.stringify(linkedList, undefined, 2);
+
+      // Reverse the list
+      linkedList.reverse();
+
+      document.getElementById("json-4").innerHTML =
+      JSON.stringify(linkedList, undefined, 2);
+    </script>
+  </body>
+</html>
