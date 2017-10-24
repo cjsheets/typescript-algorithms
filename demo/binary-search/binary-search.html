@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <script src="../../dist/typescript-algorithms.min.js"></script>
+  </head>
+  <body>
+    <b>Initial Array</b><br>
+    <pre id="json-1"></pre>
+
+    <b>Trimmed List</b><br>
+    <pre id="json-2"></pre>
+    <script>
+      const binarySearch = new tsAlgorithms.BinarySearch();
+
+      // Add elements to the linked list
+      const array = [80, 20, 12, 50, 30, 10, 20, 90, 40, 60, 70, 80, 20, 50, 30, 10, 20, 90, 40, 60, 70]
+
+      document.getElementById("json-1").innerHTML =
+      JSON.stringify(array, undefined, 2);
+
+      // Remove an element from the list
+      const index = binarySearch.find(array, 12);
+
+      document.getElementById("json-2").innerHTML =
+      JSON.stringify(index, undefined, 2);
+    </script>
+  </body>
+</html>
