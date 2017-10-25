@@ -1,17 +1,20 @@
-const glob = require("glob");
 const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    "typescript-algorithms": glob.sync("./src/**/*.ts"),
-    "typescript-algorithms.min": glob.sync("./src/**/*.ts")
+    'typescript-algorithms': './src/index.ts',
+    'typescript-algorithms.min': './src/index.ts',
   },
   output: {
     path: path.join(__dirname, 'dist'),
     filename: '[name].js',
-    libraryTarget: 'var',
-    library: 'tsAlgorithms'
+    libraryTarget: 'umd',
+    library: 'tsAlgorithms',
+    umdNamedDefine: true
+  },
+  resolve: {
+    extensions: ['.ts', '.js']
   },
   module: {
     loaders: [{
