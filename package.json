@@ -6,7 +6,7 @@
     "build": "npm run clean && npm run build:prod",
     "clean": "rimraf ./dist",
     "build:prod": "./node_modules/.bin/webpack",
-    "test": "echo \"ToDo: Write tests\" && exit 1"
+    "test": "mocha -r ts-node/register test/**/*.test.ts"
   },
   "main": "dist/typescript-algorithms.min.js",
   "repository": {
@@ -20,8 +20,13 @@
   },
   "homepage": "https://github.com/cjsheets/typescript-algorithms#readme",
   "devDependencies": {
+    "@types/chai": "4.0.4",
+    "@types/mocha": "2.2.43",
+    "chai": "4.1.2",
+    "mocha": "4.0.1",
     "rimraf": "2.6.2",
     "ts-loader": "2.0.3",
+    "ts-node": "3.3.0",
     "tslint": "4.5.1",
     "tslint-loader": "3.4.3",
     "typescript": "2.5.3",

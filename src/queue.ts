@@ -35,6 +35,13 @@ export class Queue<T> {
   }
 
   /**
+  * Remove all entities from the queue
+  */
+  public clear() {
+    return this.queue.splice(0, this.length());
+  }
+
+  /**
   * Return a space-seperated queue as a string
   * @return {string}
   */
