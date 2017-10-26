@@ -6,7 +6,7 @@
     "build": "npm run clean && npm run build:prod",
     "clean": "rimraf ./dist",
     "build:prod": "./node_modules/.bin/webpack",
-    "test": "mocha -r ts-node/register test/**/*.test.ts",
+    "test": "nyc mocha -r ts-node/register test/**/*.test.ts",
     "test:coverage": "NODE_ENV=test nyc report --reporter=text-lcov | coveralls"
   },
   "main": "dist/typescript-algorithms.min.js",
