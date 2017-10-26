@@ -16,6 +16,20 @@ describe('Queue', () => {
     };
   });
 
+  it('creates a queue', () => {
+    seedQueue();
+    expect(queue.length()).equals(3);
+    expect(queue.peek()).equals('A');
+  });
+
+  it('removes an item from a queue', () => {
+    seedQueue();
+    expect(queue.length()).equals(3);
+    expect(queue.dequeue()).equals('A');
+    expect(queue.length()).equals(2);
+    expect(queue.peek()).equals('B');
+  });
+
   it('reports the length of a queue', () => {
     expect(queue.length()).equals(0);
     seedQueue();
@@ -26,5 +40,10 @@ describe('Queue', () => {
     expect(queue.length()).equals(3);
     queue.clear();
     expect(queue.length()).equals(0);
+  });
+
+  it('displays a queue', () => {
+    seedQueue();
+    expect(queue.print()).equals('A B C');
   });
 });
