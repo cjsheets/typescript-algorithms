@@ -8,12 +8,12 @@ describe('Queue', () => {
 
   beforeEach(() => {
     queue = new Queue();
-    
+
     seedQueue = () => {
       queue.enqueue('A');
       queue.enqueue('B');
       queue.enqueue('C');
-    }
+    };
   });
 
   it('reports the length of a queue', () => {
