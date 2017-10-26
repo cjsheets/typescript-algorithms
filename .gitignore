@@ -9,5 +9,7 @@ node_modules
 .settings
 .idea
 
+npm-debug.log
+
 yarn.lock
 yarn-error.log
