@@ -2,6 +2,7 @@
 node_modules
 /coverage
 /dist
+.nyc_output
 
 # Editor configuration
 .vscode
