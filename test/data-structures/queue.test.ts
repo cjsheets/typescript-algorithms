@@ -1,6 +1,6 @@
 import {expect} from 'chai';
 
-import { Queue } from '../src/index';
+import { Queue } from '../../src/index';
 
 describe('Queue', () => {
   let queue: Queue<string>;
