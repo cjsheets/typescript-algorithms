@@ -99,6 +99,22 @@ export class LinkedList<T> {
     }
   }
 
+  /**
+  * Return a the length of the list
+  * @return {number}
+  */
+  get length() {
+    return this.listLength;
+  }
+
+  /**
+  * Return a space-seperated linked list as a string
+  * @return {string}
+  */
+  public print() {
+    return JSON.stringify(this.head);
+  }
+
   private newNode = <T>(item: T) =>
     ({item, next: null as INode<T>});
 
