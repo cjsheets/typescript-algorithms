@@ -10,7 +10,10 @@ This repository contains Javascript/Typescript implementations of classic Comput
 
 Usage
 -----------
-More demos coming soon.
+
+```
+npm install typescript-algorithms
+```
 
 
 Development
