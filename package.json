@@ -1,6 +1,6 @@
 {
   "name": "typescript-algorithms",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Algorithms and Data Structures in Typescript",
   "scripts": {
     "build": "npm run clean && npm run build:prod",
@@ -8,8 +8,7 @@
     "build:prod": "./node_modules/.bin/webpack",
     "test": "nyc mocha -r ts-node/register test/**/*.test.ts",
     "test:coverage": "nyc report --reporter=text-lcov | coveralls",
-    "test:watch": "nyc mocha -w --watch-extensions ts -r ts-node/register test/**/*.test.ts",
-    "publish": "npm publish"
+    "test:watch": "nyc mocha -w --watch-extensions ts -r ts-node/register test/**/*.test.ts"
   },
   "main": "dist/typescript-algorithms.min.js",
   "repository": {

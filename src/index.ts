@@ -1,3 +1,4 @@
+export { BinaryTree } from './data-structures/binary-tree';
 export { LinkedList } from './data-structures/linked-list';
 export { Stack } from './data-structures/stack';
 export { Queue } from './data-structures/queue';
