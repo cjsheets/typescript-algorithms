@@ -37,6 +37,20 @@ export class BinaryTree<T> {
     }
   }
 
+  public height(): number {
+    const getHeight = (node?: INode<T>): number => {
+      if (!node) {
+        return 0;
+      }
+      const leftHeight = getHeight(node.left);
+      const rightHeight = getHeight(node.right);
+
+      return Math.max(leftHeight, rightHeight) + 1;
+    };
+
+    return getHeight(this.root);
+  }
+
   /**
   * Return the binary tree as a string
   * @return {string}
