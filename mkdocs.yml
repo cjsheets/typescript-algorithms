@@ -1,0 +1,13 @@
+site_name: 'Typescript Algorithms'
+site_author: 'Chad Sheets'
+site_url: 'https://algorithms.sheets.ch'
+
+docs_dir: 'docs'
+theme: 'rtd-dropdown'
+
+repo_name: 'cjsheets/typescript-algorithms'
+repo_url: 'https://github.com/cjsheets/typescript-algorithms'
+copyright: Copyright &copy; 2017 <a href="http://cjsheets.com">Chad Sheets</a>.
+
+pages:
+  - Overview: index.md

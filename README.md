@@ -30,6 +30,20 @@ After making changes to `src/`, rebuild the library:
 
 > npm build
 
+Documentation
+-------------
+
+The documentation for this repository is built using MkDocs and served via GitHub Pages.
+
+You can view the docs locally by installing the docs theme (which includes mkdocs
+as a dependency) and using mkdocs to build:
+
+```
+pip install mkdocs-rtd-dropdown
+mkdocs serve
+```
+
+
 Credits
 -------
 
